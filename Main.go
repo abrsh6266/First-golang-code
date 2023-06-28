@@ -2,11 +2,11 @@ package main
 import ("fmt")
 const (
 	first = iota
-	cat
+	cat = 1 << (10 * iota)
 	dog
 	horse
 )
 func main(){
 	const specialisttype int = cat
-	fmt.Println(specialisttype==cat)
+	fmt.Println(horse)
 }
